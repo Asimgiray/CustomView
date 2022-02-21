@@ -8,15 +8,13 @@ import androidx.cardview.widget.CardView
 import androidx.databinding.DataBindingUtil
 import com.example.customview.databinding.CustomViewBinding
 
-class CustomView : CardView {
+class CustomView(context: Context) : CardView(context) {
 
     lateinit var binding: CustomViewBinding
 
-    constructor(context: Context) : super(context) { init() }
-
-    constructor(context: Context, attributeSet: AttributeSet) : super(context , attributeSet) { init() }
-
-    constructor(context: Context, attributeSet: AttributeSet, defStyleAttr: Int) : super(context , attributeSet , defStyleAttr) { init() }
+    init {
+        init()
+    }
 
     private fun init() {
         binding = DataBindingUtil.inflate(
