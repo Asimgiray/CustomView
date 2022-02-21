@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomView</string>
+    <string name="add_to_list">Add to list</string>
+    <string name="added_list">Added to list</string>
+</resources>
